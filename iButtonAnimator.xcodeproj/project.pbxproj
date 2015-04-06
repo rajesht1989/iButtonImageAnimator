@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		922A72091AD2A25600F8C312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 922A72081AD2A25600F8C312 /* main.m */; };
+		922A720C1AD2A25600F8C312 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 922A720B1AD2A25600F8C312 /* AppDelegate.m */; };
+		922A720F1AD2A25600F8C312 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922A720E1AD2A25600F8C312 /* ViewController.m */; };
+		922A72121AD2A25600F8C312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922A72101AD2A25600F8C312 /* Main.storyboard */; };
+		922A72141AD2A25600F8C312 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 922A72131AD2A25600F8C312 /* Images.xcassets */; };
+		922A72171AD2A25600F8C312 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 922A72151AD2A25600F8C312 /* LaunchScreen.xib */; };
+		922A722E1AD2A3A600F8C312 /* iBAButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 922A722D1AD2A3A600F8C312 /* iBAButton.m */; };
+		922A72301AD2A96800F8C312 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 922A722F1AD2A96800F8C312 /* info.png */; };
+		922A72321AD2C3F200F8C312 /* itunes.png in Resources */ = {isa = PBXBuildFile; fileRef = 922A72311AD2C3F200F8C312 /* itunes.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		922A72031AD2A25600F8C312 /* iButtonAnimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iButtonAnimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		922A72071AD2A25600F8C312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		922A72081AD2A25600F8C312 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		922A720A1AD2A25600F8C312 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		922A720B1AD2A25600F8C312 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		922A720D1AD2A25600F8C312 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		922A720E1AD2A25600F8C312 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		922A72111AD2A25600F8C312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		922A72131AD2A25600F8C312 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		922A72161AD2A25600F8C312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		922A72211AD2A25600F8C312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		922A72221AD2A25600F8C312 /* iBarButtonImageAnimatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBarButtonImageAnimatorTests.m; sourceTree = "<group>"; };
+		922A722C1AD2A3A600F8C312 /* iBAButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBAButton.h; sourceTree = "<group>"; };
+		922A722D1AD2A3A600F8C312 /* iBAButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBAButton.m; sourceTree = "<group>"; };
+		922A722F1AD2A96800F8C312 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		922A72311AD2C3F200F8C312 /* itunes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itunes.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		922A72001AD2A25600F8C312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		922A71FA1AD2A25600F8C312 = {
+			isa = PBXGroup;
+			children = (
+				922A72051AD2A25600F8C312 /* iBarButtonImageAnimator */,
+				922A721F1AD2A25600F8C312 /* iBarButtonImageAnimatorTests */,
+				922A72041AD2A25600F8C312 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		922A72041AD2A25600F8C312 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				922A72031AD2A25600F8C312 /* iButtonAnimator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		922A72051AD2A25600F8C312 /* iBarButtonImageAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				922A720A1AD2A25600F8C312 /* AppDelegate.h */,
+				922A720B1AD2A25600F8C312 /* AppDelegate.m */,
+				922A720D1AD2A25600F8C312 /* ViewController.h */,
+				922A720E1AD2A25600F8C312 /* ViewController.m */,
+				922A722C1AD2A3A600F8C312 /* iBAButton.h */,
+				922A722D1AD2A3A600F8C312 /* iBAButton.m */,
+				922A72101AD2A25600F8C312 /* Main.storyboard */,
+				922A72131AD2A25600F8C312 /* Images.xcassets */,
+				922A72151AD2A25600F8C312 /* LaunchScreen.xib */,
+				922A72061AD2A25600F8C312 /* Supporting Files */,
+			);
+			path = iBarButtonImageAnimator;
+			sourceTree = "<group>";
+		};
+		922A72061AD2A25600F8C312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				922A72311AD2C3F200F8C312 /* itunes.png */,
+				922A722F1AD2A96800F8C312 /* info.png */,
+				922A72071AD2A25600F8C312 /* Info.plist */,
+				922A72081AD2A25600F8C312 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		922A721F1AD2A25600F8C312 /* iBarButtonImageAnimatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				922A72221AD2A25600F8C312 /* iBarButtonImageAnimatorTests.m */,
+				922A72201AD2A25600F8C312 /* Supporting Files */,
+			);
+			path = iBarButtonImageAnimatorTests;
+			sourceTree = "<group>";
+		};
+		922A72201AD2A25600F8C312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				922A72211AD2A25600F8C312 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		922A72021AD2A25600F8C312 /* iButtonAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 922A72261AD2A25600F8C312 /* Build configuration list for PBXNativeTarget "iButtonAnimator" */;
+			buildPhases = (
+				922A71FF1AD2A25600F8C312 /* Sources */,
+				922A72001AD2A25600F8C312 /* Frameworks */,
+				922A72011AD2A25600F8C312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iButtonAnimator;
+			productName = iBarButtonImageAnimator;
+			productReference = 922A72031AD2A25600F8C312 /* iButtonAnimator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		922A71FB1AD2A25600F8C312 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = ZOHO;
+				TargetAttributes = {
+					922A72021AD2A25600F8C312 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 922A71FE1AD2A25600F8C312 /* Build configuration list for PBXProject "iButtonAnimator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 922A71FA1AD2A25600F8C312;
+			productRefGroup = 922A72041AD2A25600F8C312 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				922A72021AD2A25600F8C312 /* iButtonAnimator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		922A72011AD2A25600F8C312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				922A72121AD2A25600F8C312 /* Main.storyboard in Resources */,
+				922A72321AD2C3F200F8C312 /* itunes.png in Resources */,
+				922A72171AD2A25600F8C312 /* LaunchScreen.xib in Resources */,
+				922A72141AD2A25600F8C312 /* Images.xcassets in Resources */,
+				922A72301AD2A96800F8C312 /* info.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		922A71FF1AD2A25600F8C312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				922A720F1AD2A25600F8C312 /* ViewController.m in Sources */,
+				922A722E1AD2A3A600F8C312 /* iBAButton.m in Sources */,
+				922A720C1AD2A25600F8C312 /* AppDelegate.m in Sources */,
+				922A72091AD2A25600F8C312 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		922A72101AD2A25600F8C312 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				922A72111AD2A25600F8C312 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		922A72151AD2A25600F8C312 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				922A72161AD2A25600F8C312 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		922A72241AD2A25600F8C312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		922A72251AD2A25600F8C312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		922A72271AD2A25600F8C312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iBarButtonImageAnimator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = iButtonAnimator;
+			};
+			name = Debug;
+		};
+		922A72281AD2A25600F8C312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iBarButtonImageAnimator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = iButtonAnimator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		922A71FE1AD2A25600F8C312 /* Build configuration list for PBXProject "iButtonAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				922A72241AD2A25600F8C312 /* Debug */,
+				922A72251AD2A25600F8C312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		922A72261AD2A25600F8C312 /* Build configuration list for PBXNativeTarget "iButtonAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				922A72271AD2A25600F8C312 /* Debug */,
+				922A72281AD2A25600F8C312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 922A71FB1AD2A25600F8C312 /* Project object */;
+}
