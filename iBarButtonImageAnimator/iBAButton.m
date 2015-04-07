@@ -20,6 +20,7 @@
     iButtonImageTarget = target;
     iButtonImageSelector = action;
     [super addTarget:self action:@selector(buttonTapped:) forControlEvents:controlEvents];
+    self.selectionImage = self.selectionImage ? self.selectionImage : [self loadImage];
     if (!iButtonImageImageView)
     {
         iButtonImageImageView = [[UIImageView alloc] initWithFrame:self.bounds];
@@ -31,23 +32,73 @@
 - (void)buttonTapped:(UIButton *)button
 {
     [iButtonImageTarget performSelector:iButtonImageSelector withObject:button];
-    iButtonImageClipsToBounds = self.clipsToBounds;
-    self.clipsToBounds = NO;
-    [iButtonImageImageView setHidden:NO];
-    [iButtonImageImageView setImage:self.selectionImage];
-    [self setUserInteractionEnabled:NO];
-    [UIView animateWithDuration:.3 animations:^{
-        [iButtonImageImageView setFrame:CGRectMake(- iButtonImageImageView.frame.size.width/2, - iButtonImageImageView.frame.size.height/2, iButtonImageImageView.frame.size.width * 2, iButtonImageImageView.frame.size.height * 2)];
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:.3 animations:^{
-            [iButtonImageImageView setFrame:self.bounds];
-        } completion:^(BOOL finished) {
-            [self setUserInteractionEnabled:YES];
-            self.clipsToBounds = iButtonImageClipsToBounds;
-            [iButtonImageImageView setHidden:YES];
-            [iButtonImageImageView setImage:nil];
-        }];
-    }];
+    [self resetProperties:NO];
+    switch (_animationType)
+    {
+        case BAZoom:
+        {
+            [UIView animateWithDuration:.3 animations:^{
+                CGSize imageSize = iButtonImageImageView.frame.size;
+                [iButtonImageImageView setFrame:CGRectMake(- imageSize.width/2, - imageSize.height/2, imageSize.width * 2, imageSize.height * 2)];
+            } completion:^(BOOL finished) {
+                [UIView animateWithDuration:.3 animations:^{
+                    [iButtonImageImageView setFrame:self.bounds];
+                } completion:^(BOOL finished) {
+                    [self resetProperties:YES];
+                }];
+            }];
+        }
+            break;
+        case BAHeartBeat:
+        {
+            CGSize imageSize = iButtonImageImageView.frame.size;
+            [UIView animateWithDuration:.3 animations:^{
+                [iButtonImageImageView setFrame:CGRectMake(0,0, imageSize.width * 1.3, imageSize.height * 1.3)];
+            } completion:^(BOOL finished) {
+                [UIView animateWithDuration:.2 animations:^{
+                    [iButtonImageImageView setFrame:CGRectMake(0,0, imageSize.width * 1, imageSize.height * 1)];
+                } completion:^(BOOL finished) {
+                    [UIView animateWithDuration:.2 animations:^{
+                        [iButtonImageImageView setFrame:CGRectMake(0,0, imageSize.width * 1.2, imageSize.height * 1.2)];
+                    } completion:^(BOOL finished) {
+                        [UIView animateWithDuration:.2 animations:^{
+                            [iButtonImageImageView setFrame:self.bounds];
+                        } completion:^(BOOL finished) {
+                            [self resetProperties:YES];
+                        }];
+                    }];
+                }];
+            }];
+        }
+        default:
+            break;
+    }
+    
+}
+
+- (void)resetProperties:(BOOL)isAnimationEnd
+{
+    [iButtonImageImageView setHidden:isAnimationEnd];
+    [self setUserInteractionEnabled:isAnimationEnd];
+    if (isAnimationEnd)
+    {
+        self.clipsToBounds = iButtonImageClipsToBounds;
+        [iButtonImageImageView setImage:nil];
+    }
+    else
+    {
+        iButtonImageClipsToBounds = self.clipsToBounds;
+        [self setClipsToBounds:isAnimationEnd];
+        [iButtonImageImageView setImage:self.selectionImage];
+    }
+}
+
+- (UIImage*) loadImage {
+    UIGraphicsBeginImageContext(self.bounds.size);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return viewImage;
 }
 
 @end
